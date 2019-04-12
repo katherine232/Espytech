@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <title>ESPYTech</title>
+<style>
+
+html { font-size: 1px; }
+body {
+  margin: 0;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 30rem;
+  color:#C176F1;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  background-position: 50% 75%;
+  background-size: cover;
+}
+
+titulo {
+  position: relative;
+  display: flex;
+}
+
+h1 { margin: 0;}
+.marker, .r, .e1, .s1, .s2, .e2, .e3 {
+  animation-timing-function: cubic-bezier(0.15,-0.01, 0.58, 1);
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  will-change: transform;
+
+}
+
+.marker {
+  position: absolute; top: 4rem; left: -3rem;
+  height: 3rem; width: 40rem;
+  background-color: white;
+  animation-name: marker;
+}
+
+.r { margin-left: 1rem;   animation-name: r; }
+.e1 { margin-left: 7rem; animation-name: e1; }
+.s1 { margin-left: 16rem; animation-name: s1; }
+.s2 { margin-left: 21rem; animation-name: s2; }
+.e2 { margin-left: 21rem; animation-name: s2; }
+.e3 { margin: 0 36rem 0 42rem; animation-name: e2; }
+
+@keyframes r {
+  0%, 20% { transform: translateX(0); }
+  50%, 70% { transform: translateX(35rem); }
+}
+@keyframes e1 {
+  0%, 20% { transform: translateX(0); }
+  50%, 70% { transform: translateX(75rem); }
+}
+@keyframes s1 {
+  0%, 20% { transform: translateX(0); }
+  50%, 70% { transform: translateX(81rem); }
+}
+@keyframes s2 {
+  0%, 20% { transform: translateX(0); }
+  50%, 70% { transform: translateX(71rem); }
+}
+@keyframes e2 {
+  0%, 20% { transform: translateX(0); }
+  50%, 70% { transform: translateX(34rem); }
+}
+@keyframes e3 {
+  0%, 20% { transform: translateX(0); }
+  50%, 70% { transform: translateX(100rem); }
+}
+@keyframes marker {
+  0%, 20% { transform: translateX(0); }
+  50%, 70% { transform: translateX(415rem); }
+}
+
+    </style>
+
+  </head>
+
+  <body >
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Work+Sans:100" rel="stylesheet">
+
+
+      <a href="/home" style="text-decoration:none"><titulo>
+   <div class="marker"></div>
+    <h1>E</h1>
+    <h1 class="r">S</h1>
+    <h1 class="e1">P</h1>
+    <h1 class="s1">Y</h1>
+    <h1 class="s2">T</h1>
+    <h1 class="e2">E</h1>
+    <h1 class="e3">C</h1>
+    <h1>H</h1></a>
+  </titulo></a>
+
+  </body>
+</html>
