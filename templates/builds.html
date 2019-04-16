@@ -1,0 +1,62 @@
+{% extends 'layout.html' %}
+
+{% block body%}
+
+
+
+ 
+
+<div class="jumbotron text-center">
+
+  <font color=#C176F1 style="font-size:50px"><b> Are these the values that you submitted? </b></font>
+  <br>
+  <br>
+
+
+
+</div>
+
+
+<table align="center" width="75%">
+	<tr align="center">
+		<td align="center">
+			
+			<font color="#C176F1" size="10px">Chosen budget: </font><font color="#5ce2ff" size="10px">${{Budget}}</font>
+
+			<br>
+
+			</td>
+	</tr>
+		<tr align="center">
+		<td align="center">
+
+			<font color="#C176F1" size="10px">Chosen usage: </font><font color="#5ce2ff" size="10px">{{Use}}</font>
+
+			<br>
+
+			</td>
+	</tr>
+		<tr align="center">
+		<td align="center">
+
+			<font color="#C176F1" size="10px">Chosen mobility: </font> <font color="#5ce2ff" size="10px">{{Mobility}}</font>
+
+			<br>
+
+				</td>
+	</tr>
+	
+
+
+	
+</table>
+
+
+
+<div class="jumbotron text-center">
+
+  <a href="/articles"><button class="btn-hover color-3"> Build My Computer</button><a>
+
+</div>
+
+{% endblock %}

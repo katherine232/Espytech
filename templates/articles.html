@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+
+{% block body%}
+
+
+
+ 
+
+<div class="jumbotron text-center">
+
+  <font color=#C176F1 style="font-size:50px"><b> Here are the builds made for you! </b></font>
+  <br>
+  <br>
+
+
+
+</div>
+  <h1>Computers</h1>
+
+  <ul class="list-group">
+
+    {% for article in articles %}
+      <li class="list-group-item"><a href="article/{{article.id}}"> {{article.title}} </a></li>
+    {% endfor %}
+
+  </ul>
+
+
+
+{% endblock %}

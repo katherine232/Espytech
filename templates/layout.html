@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <title>ESPYTech</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+
+    .bg-dark{background-color:#000000!important}
+    .bg-dark:hover{background-color:#000000!important}
+
+    .nav-link{color:#FFFFFF!important}
+    .nav-link:hover{color:#C176F1!important}
+
+  .slidecontainer {
+	width: 50%;
+	}
+
+	.slider {
+	-webkit-appearance: none;
+	width: 100%;
+	height: 25px;
+	background: #DCD8D8; <!-- background Color of the sliderBar -->
+	outline: none;
+	opacity: 4 <!-- 07 --> ;
+	-webkit-transition: .2s;
+	transition: opacity .2s;
+	}
+
+	.slider:hover {
+	opacity: 1;
+	}
+
+	.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 25px;
+	height: 25px;
+	background: #C176F1; <!-- MATCH THIS WITH THE BGCOLOR DEL TABLE background of the RANGE SLIDER linea (alrededor de la linea)
+	cursor: pointer;
+	}
+
+	.slider::-moz-range-thumb {
+	width: 25px;
+	height: 25px;
+	background: red; <!-- DO NOT CHANGE background Color SliderPointer -->
+	cursor: pointer;
+	}
+
+  /* Beginning of CSS Radio Buttons */
+  .radio22 {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  /* Hide the browser's default radio button */
+  .radio22 input {
+    opacity: 0;
+  }
+
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #ACACAC;
+    border-radius: 50%;
+  }
+
+  /* On mouse-over, add a grey background color */
+  .radio22:hover input ~ .checkmark {
+    background-color: #000000;
+  }
+
+  /* When the radio button is checked, add a blue background */
+  .radio22 input:checked ~ .checkmark {
+    background-color: #C176F1;
+  }
+
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the indicator (dot/circle) when checked */
+  .radio22 input:checked ~ .checkmark:after {
+    display: block;
+
+  }
+
+  /* Style the indicator (dot/circle) */
+  .radio22 .checkmark:after {
+   	top: 9px;
+  	left: 9px;
+  	width: 8px;
+  	height: 8px;
+  	border-radius: 50%;
+  	background: black;
+
+  }
+
+  /* Beginning of CSS Radio Buttons */
+
+
+
+  /* Beginning of container  */
+  .container{min-width:1700px!important}
+
+  .nav-link{font-size: 30px;}
+
+  /* End of CSS for Buttons */
+
+
+
+/* Beginning of CSS for Buttons */
+  .buttons {
+    margin: 10%;
+    text-align: center;
+}
+
+.btn-hover {
+    width: 800px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+
+}
+.btn-hover.color-3 {
+    background-image: linear-gradient(to right, #E0D8FF, #8A00FF, #6B8DD6, #c176f1);
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
+
+
+/* End of CSS for Buttons */
+
+
+    </style>
+
+  </head>
+
+  <body >
+    {% include 'includes/_navbar.html' %}
+
+    <div class="container">
+      {% block body %}
+      {% endblock %}
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+
+    </script>
+  </body>
+</html>

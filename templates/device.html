@@ -1,0 +1,158 @@
+{% extends 'layout.html' %}
+
+{% block body%}
+
+
+
+<div class="jumbotron text-center">
+
+  <font color=#C176F1 style="font-size:50px"><b>Instrucctions to build the perfect device for you</b></font>
+  <br>
+  <br>
+
+  <p class="text-justify lead" color=#FFFFFF style="font-size:20px" >
+    Building a PC can become a grueling task when it comes to researching the best possible
+    components that will fit your budget and lifestyle, while also making sure those components
+    are compatible. With ESPYTech it can all be done just by answering a few simple questions and following instrucctions
+
+  </p>
+
+</div>
+
+<form name="passData" action="." method="POST">
+
+
+<table align="center" width="75%">
+
+  <tr align="center">
+    <td align="left">
+      <font color=#C176F1 style="font-size:45px"> Device Options:</font>
+    </td>
+  </tr>
+
+  <tr align="center">
+    <td align="center">
+      <br>
+      <br>
+      <font color=#C176F1 style="font-size:35px">What is your budget?</font>
+      <br><br>
+      	<input type="range" min="1" max="5000" name="Range" class="slider" id="sliderRange">
+        <br><br>
+      	<p style="font-size:25px">USD $ <span  id="demo"> </span> </p>
+        <br>
+        <br>
+    </td>
+  </tr>
+
+  <tr align="center">
+    <td align="center">
+      <font color=#C176F1 style="font-size:35px">How mobile do you need your computer to be?</font>
+      <br>
+      <br>
+    </td>
+  </tr>
+
+  </table>
+
+  <table align="center" width="15%">
+
+    <tr align="center">
+      <td align="center">
+        <label class="radio22"> <font color=#000000 style="font-size:25px">Desktop</font>
+          <input type="radio" checked="checked" name="Mobility" value="Desktop">
+          <span class="checkmark"></span>
+        </label>
+      </td>
+    </tr>
+
+    <tr align="center">
+      <td align="center">
+        <label class="radio22"> <font color=#000000 style="font-size:25px">Laptop</font>
+          <input type="radio" name="Mobility" value="Laptop">
+          <span class="checkmark"></span>
+        </label>
+      </td>
+    </tr>
+  </table>
+
+
+
+
+<table align="center" width="75%">
+
+
+  <tr align="center">
+    <td align="center">
+      <br>
+      <br>
+      <font color=#C176F1 style="font-size:35px">What will you mostly use your computer for?</font>
+      <br>
+      <br>
+
+    </td>
+  </tr>
+
+  </table>
+
+  <table align="center" width="15%">
+
+    <tr align="center">
+      <td align="center">
+        <label class="radio22"> <font color=#000000 style="font-size:25px">General</font>
+          <input type="radio" checked="checked" name="Use" value="General">
+          <span class="checkmark"></span>
+        </label>
+      </td>
+    </tr>
+
+
+    <tr align="center">
+      <td align="center">
+        <label class="radio22"> <font color=#000000 style="font-size:25px">Gaming</font>
+          <input type="radio" name="Use" value="Gaming">
+          <span class="checkmark"></span>
+        </label>
+      </td>
+    </tr>
+
+
+    <tr align="center">
+      <td align="center">
+        <label class="radio22"> <font color=#000000 style="font-size:25px">Work</font>
+          <input type="radio" name="Use" value="Work">
+          <span class="checkmark"></span>
+        </label>
+      </td>
+    </tr>
+
+    <tr align="center">
+      <td align="center">
+        <label class="radio22"> <font color=#000000 style="font-size:25px">Media</font>
+          <input type="radio" name="Use" value="Media">
+          <span class="checkmark"></span>
+        </label>
+      </td>
+    </tr>
+
+</table>
+
+<div class="jumbotron text-center">
+  <a href="/builds"><button class="btn-hover color-3" type="submit" value="submit"> Submit </button><a>
+</div>
+
+  
+</form>
+
+<script>
+	var rangeslider = document.getElementById("sliderRange");
+	var output = document.getElementById("demo");
+
+	output.innerHTML = rangeslider.value;
+
+	rangeslider.oninput = function() {
+	output.innerHTML = this.value;
+	}
+
+	</script>
+
+{% endblock %}
